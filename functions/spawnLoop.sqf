@@ -43,7 +43,7 @@ if (!continueLoop) exitWith {
 		doOnce = doOnce +1;
 	};
 } forEach FRIENDLY_GROUPS;
-saveGame;
 sleep 1200; //1200 = 20 min
+saveGame;
 
 [] spawn jMD_fnc_spawnLoop;
