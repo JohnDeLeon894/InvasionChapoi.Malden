@@ -1,14 +1,14 @@
 
+onLoadName = "Invasion of Chapoi";
+OnLoadMission = "This is the mission where you soldier around and do soldier things. ";
+briefingName = "Invasion of Chapoi";
+loadscreen="";
+pictureMap = "";
+overviewPicture="";
 
-onLoadName = "";
-OnLoadMission = "";
-
-// loadscreen="";
-// pictureMap = "";
-//overviewPicture="";
-
-overviewText = "";
+overviewText = "This is the mission where you soldier around and do soldier things.";
 author = "Mr D.";
+
 
 class cfgFunctions{
   class jMD {
@@ -31,6 +31,10 @@ class cfgFunctions{
       };
       class initFromLoad {
         file = "functions\initFromLoad.sqf";
+      };
+      class wordArrayDefinitions {
+        preInit = 1;
+        file = "functions\preInit\wordArrayDefinitions.sqf";
       };
     };
   };

@@ -17,6 +17,6 @@ for [{private _i=0}, {_i<_count}, {_i=_i+1}] do {
 };
 
 // return value
-if(count _unitsCreated > 0) then {
-hint format [" results: %1", _unitsCreated]
-}
+// if(count _unitsCreated > 0) then {
+// hint format [" results: %1", _unitsCreated]
+// }
