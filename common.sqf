@@ -18,11 +18,34 @@ ally_5 = createGroup [west, false];
 ally_6 = createGroup [west, false];
 ally_7 = createGroup [west, false];
 
+ENEMY_GROUPS = [
+	attackGroup_1,
+	attackGroup_2,
+	attackGroup_3,
+	attackGroup_4,
+	attackGroup_5,
+	attackGroup_6
+];
+
+FRIENDLY_GROUPS = [
+	ally_1,
+	ally_2,
+	ally_3,
+	ally_4,
+	ally_5
+];
+ARTY = [
+	m1,
+	m2,
+	m3,
+	m4
+];
+
 // variable for counting stuff
 groupCount = 0;
 continueLoop = true;
 doOnce = 0;
-BLU_UNIT_SIZE = 5;
+BLU_UNIT_SIZE = 8;
 RED_UNIT_SIZE = 8;
 
 // find the marker 
@@ -30,13 +53,15 @@ RED_UNIT_SIZE = 8;
 
 WEST_SPAWN = markerPos ["westSpawn", true];
 EAST_SPAWN = markerPos ["eastSpawn", true];
+AMMO_ZONE = markerPos [ 'ammoTruckZone', true];
+
 
 // enemy markers 
 
 EAST_POSITIONS = [];
 
-	private _i = 0;
-	private _continue = true; 
+private _i = 0;
+private _continue = true; 
 while {_continue} do {
 	_i = _i+1;
 	private _locName = format ['loc_%1', _i];
