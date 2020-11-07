@@ -2231,7 +2231,6 @@ class Mission
 			class Attributes
 			{
 				name="artyGroup";
-				init="call{[_this]execVM 'setGroupCallSign.sqf';" \n "hint format ['arty group callsign %1', groupId _this];}";
 			};
 			class CrewLinks
 			{
