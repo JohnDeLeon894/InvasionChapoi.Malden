@@ -1,4 +1,4 @@
-version=53;
+version=54;
 class EditorData
 {
 	moveGridStep=1;
@@ -8,21 +8,22 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=189;
+		nextID=210;
 	};
 	class MarkerIDProvider
 	{
-		nextID=2;
+		nextID=3;
 	};
 	class Camera
 	{
-		pos[]={3608.8167,8.3730059,3275.929};
-		dir[]={0.98604256,-0.15785912,-0.05368783};
-		up[]={0.15767266,0.98745185,-0.0085845608};
-		aside[]={-0.054368526,2.9160583e-007,-0.99856198};
+		pos[]={6161.0723,67.377129,3536.3062};
+		dir[]={0.96399373,-0.26150322,-0.048488352};
+		up[]={0.26117763,0.96520257,-0.013136795};
+		aside[]={-0.050235633,2.4483597e-008,-0.99875009};
 	};
 };
 binarizationWanted=0;
+sourceName="InvasionChapoi";
 addons[]=
 {
 	"MR",
@@ -271,7 +272,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=97;
+		items=101;
 		class Item0
 		{
 			dataType="Group";
@@ -2140,7 +2141,7 @@ class Mission
 			{
 				text="call arty";
 				condition="call{this}";
-				onActivation="call{hint 'click on map';" \n "onMapSingleClick '" \n "onMapSingleClick """";" \n "[_pos]execVM ""functions\support\callArty.sqf"";" \n "';}";
+				onActivation="call{[]execVM ""functions\support\callArty.sqf"";" \n "}";
 				sizeA=0;
 				sizeB=0;
 				timeout[]={1,2,3};
@@ -3177,6 +3178,183 @@ class Mission
 			};
 			id=188;
 			type="EmptyDetector";
+		};
+		class Item97
+		{
+			dataType="Marker";
+			position[]={6161.5142,63.327,3535.175};
+			name="eastVehicleSpawn";
+			type="Empty";
+			id=189;
+			atlOffset=0.00018310547;
+		};
+		class Item98
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=4;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={6175.5269,64.501236,3537.095};
+						angles[]={6.2807932,0,0.077444658};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=205;
+					type="LOP_ISTS_OPF_Infantry_Rifleman";
+					atlOffset=7.6293945e-006;
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={6175.354,66.728203,3537.1323};
+						angles[]={6.271987,0,0.086185835};
+					};
+					side="East";
+					flags=2;
+					class Attributes
+					{
+					};
+					id=206;
+					type="LOP_ISTS_OPF_Infantry_Rifleman";
+					atlOffset=2.2408524;
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={6170.1006,64.03788,3535.7808};
+						angles[]={6.2719817,0,0.082214825};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=208;
+					type="LOP_ISTS_OPF_Infantry_Rifleman";
+					atlOffset=-2.2888184e-005;
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={6169.917,66.264236,3535.7983};
+						angles[]={6.2719817,0,0.082214825};
+					};
+					side="East";
+					class Attributes
+					{
+					};
+					id=209;
+					type="LOP_ISTS_OPF_Infantry_Rifleman";
+					atlOffset=2.2412643;
+				};
+			};
+			class Attributes
+			{
+			};
+			class CrewLinks
+			{
+				class LinkIDProvider
+				{
+					nextID=4;
+				};
+				class Links
+				{
+					items=4;
+					class Item0
+					{
+						linkID=0;
+						item0=205;
+						item1=204;
+						class CustomData
+						{
+							role=1;
+						};
+					};
+					class Item1
+					{
+						linkID=1;
+						item0=206;
+						item1=204;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={0};
+						};
+					};
+					class Item2
+					{
+						linkID=2;
+						item0=208;
+						item1=207;
+						class CustomData
+						{
+							role=1;
+						};
+					};
+					class Item3
+					{
+						linkID=3;
+						item0=209;
+						item1=207;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={0};
+						};
+					};
+				};
+			};
+			id=203;
+			atlOffset=7.6293945e-006;
+		};
+		class Item99
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6175.354,66.726761,3537.0823};
+				angles[]={6.2807932,0,0.077444658};
+			};
+			side="East";
+			flags=6;
+			class Attributes
+			{
+			};
+			id=204;
+			type="LOP_ISTS_OPF_Offroad_M2";
+			atlOffset=7.6293945e-006;
+		};
+		class Item100
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6169.917,66.262794,3535.7483};
+				angles[]={6.2719817,0,0.082214825};
+			};
+			side="East";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=207;
+			type="LOP_ISTS_OPF_Offroad_M2";
+			atlOffset=-2.2888184e-005;
 		};
 	};
 };
