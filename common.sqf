@@ -55,6 +55,7 @@ WEST_SPAWN = markerPos ["westSpawn", true];
 EAST_SPAWN = markerPos ["eastSpawn", true];
 AMMO_ZONE = markerPos [ 'ammoTruckZone', true];
 TRANSPORT_ZONE = markerPos ['rtz', true];
+EAST_VEHICLE_SPAWN = markerPos ['eastVehicleSpawn', true];
 
 // enemy markers 
 

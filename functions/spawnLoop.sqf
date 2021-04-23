@@ -43,6 +43,14 @@ if (!continueLoop) exitWith {
 		doOnce = doOnce +1;
 	};
 } forEach FRIENDLY_GROUPS;
+
+_veh = [ EAST_VEHICLE_SPAWN, 330, 'LOP_ISTS_OPF_Offroad_M2', east] call BIS_fnc_spawnVehicle;
+hint format['Created vehicle %1', _veh];
+_vehGroup = _veh select 2;
+_vehGroup setBehaviour "SAFE";
+[_vehGroup, 200, position player, true, false] call jMD_fnc_deleteAndSetWaypoints;
+
+
 sleep 1200; //1200 = 20 min
 saveGame;
 
