@@ -2,9 +2,11 @@
 onLoadName = "Invasion of Chapoi";
 OnLoadMission = "This is the mission where you soldier around and do soldier things. ";
 briefingName = "Invasion of Chapoi";
+// loadscreen="girl-with-machine-gun.jpg";
 loadscreen="girl-with-machine-gun.jpg";
 pictureMap = "";
-overviewPicture="hotGirlWithGun.jpg";
+// overviewPicture="hotGirlWithGun.jpg";
+overviewPicture="girl-with-machine-gun.jpg";
 
 overviewText = "This is the mission where you soldier around and do soldier things.";
 author = "Mr D.";
