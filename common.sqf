@@ -74,9 +74,13 @@ while {_continue} do {
 };
 
 TRANSPORTS = [
-	Rhino1,
-	Rhino2,
-	Rhino3
+	Hawk1,
+	Hawk2,
+	Hawk3
+];
+
+CAS = [
+	Buzzard_01
 ];
 
 // blufor routs 

@@ -44,7 +44,8 @@ if (!continueLoop) exitWith {
 	};
 } forEach FRIENDLY_GROUPS;
 
-_veh = [ EAST_VEHICLE_SPAWN, 330, 'LOP_ISTS_OPF_Offroad_M2', east] call BIS_fnc_spawnVehicle;
+_vehicleType = Isis_Vehicles call BIS_fnc_selectRandom;
+_veh = [ EAST_VEHICLE_SPAWN, 330, _vehicleType, east] call BIS_fnc_spawnVehicle;
 hint format['Created vehicle %1', _veh];
 _vehGroup = _veh select 2;
 _vehGroup setBehaviour "SAFE";

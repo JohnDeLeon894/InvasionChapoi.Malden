@@ -5,7 +5,6 @@ private _action = _this select 1;
 // check for available transport
 {
 	// Current result is saved in variable _x
-	hint format ['checking for %1', _x];
 	private _tooFarFromLZ = _x distance TRANSPORT_ZONE > 100;
 	if(!(alive _x)) exitWith{
 		TRANSPORTS deleteAt (TRANSPORTS find _x);

@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=210;
+		nextID=249;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={6161.0723,67.377129,3536.3062};
-		dir[]={0.96399373,-0.26150322,-0.048488352};
-		up[]={0.26117763,0.96520257,-0.013136795};
-		aside[]={-0.050235633,2.4483597e-008,-0.99875009};
+		pos[]={8074.1445,38.343212,10491.112};
+		dir[]={-0.79337579,-0.546673,0.26777512};
+		up[]={-0.51796633,0.83734614,0.17482068};
+		aside[]={0.31979018,0,0.94748831};
 	};
 };
 binarizationWanted=0;
@@ -33,13 +33,15 @@ addons[]=
 	"RHS_US_A2_AirImport",
 	"CUP_CAMisc",
 	"rhsusf_c_statics",
-	"rhsusf_c_m11xx"
+	"rhsusf_c_m11xx",
+	"A3_Characters_F",
+	"A3_Air_F_Beta_Heli_Attack_01"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=8;
+		items=10;
 		class Item0
 		{
 			className="MR";
@@ -92,7 +94,26 @@ class AddonsMetaData
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
+		class Item8
+		{
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item9
+		{
+			className="A3_Air_F_Beta";
+			name="Arma 3 Beta - Aircraft";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
 	};
+};
+dlcs[]=
+{
+	"LOP_LeightsOPFOR",
+	"RHS_USAF"
 };
 randomSeed=1411227;
 class ScenarioData
@@ -272,7 +293,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=101;
+		items=100;
 		class Item0
 		{
 			dataType="Group";
@@ -505,7 +526,7 @@ class Mission
 			};
 			id=15;
 			type="EmptyDetectorAreaR250";
-			atlOffset=0.89844131;
+			atlOffset=0.89844894;
 		};
 		class Item8
 		{
@@ -589,7 +610,7 @@ class Mission
 			type="Empty";
 			colorName="ColorBlue";
 			id=23;
-			atlOffset=8.1539536;
+			atlOffset=8.1538696;
 		};
 		class Item16
 		{
@@ -826,7 +847,7 @@ class Mission
 			type="Empty";
 			colorName="ColorRed";
 			id=47;
-			atlOffset=6.6190262;
+			atlOffset=7.1153393;
 		};
 		class Item40
 		{
@@ -1302,7 +1323,7 @@ class Mission
 					};
 					id=93;
 					type="LOP_ISTS_OPF_Infantry_AR_Asst";
-					atlOffset=0.6189537;
+					atlOffset=0.93661118;
 				};
 				class Item3
 				{
@@ -1711,40 +1732,44 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7998.5366,30.393969,10499.98};
-						angles[]={6.2767911,2.6248531,0.004796607};
+						position[]={7998.5732,30.367052,10499.653};
+						angles[]={6.2767973,2.6248531,0.0047996556};
 					};
 					side="West";
 					flags=6;
 					class Attributes
 					{
+						name="Hawk3D";
 					};
 					id=126;
 					type="rhsusf_usmc_marpat_wd_helipilot";
+					atlOffset=-0.024999619;
 				};
 				class Item1
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7998.5366,30.393969,10499.98};
-						angles[]={6.2767911,2.6248531,0.004796607};
+						position[]={7998.5732,30.367052,10499.653};
+						angles[]={6.2767973,2.6248531,0.0047996556};
 					};
 					side="West";
 					flags=4;
 					class Attributes
 					{
+						name="Hawk3G";
 					};
 					id=127;
 					type="rhsusf_usmc_marpat_wd_helipilot";
+					atlOffset=-0.024999619;
 				};
 				class Item2
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7998.5366,30.393969,10499.98};
-						angles[]={6.2767911,2.6248531,0.004796607};
+						position[]={7998.5732,30.367052,10499.653};
+						angles[]={6.2767973,2.6248531,0.0047996556};
 					};
 					side="West";
 					flags=4;
@@ -1753,14 +1778,15 @@ class Mission
 					};
 					id=128;
 					type="rhsusf_usmc_marpat_wd_helipilot";
+					atlOffset=-0.024999619;
 				};
 				class Item3
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7998.5366,30.393969,10499.98};
-						angles[]={6.2767911,2.6248531,0.004796607};
+						position[]={7998.5732,30.367052,10499.653};
+						angles[]={6.2767973,2.6248531,0.0047996556};
 					};
 					side="West";
 					flags=4;
@@ -1769,6 +1795,7 @@ class Mission
 					};
 					id=129;
 					type="rhsusf_usmc_marpat_wd_helipilot";
+					atlOffset=-0.024999619;
 				};
 			};
 			class Attributes
@@ -1829,26 +1856,26 @@ class Mission
 				};
 			};
 			id=125;
-			atlOffset=-0.024845123;
+			atlOffset=-0.025001526;
 		};
 		class Item51
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={7998.5625,32.552849,10499.59};
-				angles[]={6.2767911,2.6248531,0.004796607};
+				position[]={7998.563,32.552696,10499.59};
+				angles[]={6.2767973,2.6248531,0.0047996556};
 			};
 			side="West";
 			flags=6;
 			class Attributes
 			{
 				init="call{[this]execVM ""functions\transport\transportAddAction.sqf"";}";
-				name="Rhino3";
+				name="Hawk3";
 			};
 			id=130;
 			type="RHS_UH1Y";
-			atlOffset=-0.024845123;
+			atlOffset=-0.025001526;
 		};
 		class Item52
 		{
@@ -1862,34 +1889,36 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8001.8955,30.225576,10415.544};
-						angles[]={6.2824135,2.6248531,0.00077204045};
+						position[]={8002.1499,30.201395,10415.347};
+						angles[]={6.2824173,2.6248531,0.00076794485};
 					};
 					side="West";
 					flags=6;
 					class Attributes
 					{
+						name="Hawk2D";
 					};
 					id=132;
 					type="rhsusf_usmc_marpat_wd_helipilot";
-					atlOffset=0.00022697449;
+					atlOffset=-0.024000168;
 				};
 				class Item1
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8001.8955,30.225576,10415.544};
-						angles[]={6.2824135,2.6248531,0.00077204045};
+						position[]={8002.1499,30.201395,10415.347};
+						angles[]={6.2824173,2.6248531,0.00076794485};
 					};
 					side="West";
 					flags=4;
 					class Attributes
 					{
+						name="Hawk2G";
 					};
 					id=133;
 					type="rhsusf_usmc_marpat_wd_helipilot";
-					atlOffset=0.00022697449;
+					atlOffset=-0.024000168;
 				};
 			};
 			class Attributes
@@ -1928,26 +1957,26 @@ class Mission
 				};
 			};
 			id=131;
-			atlOffset=-0.023611069;
+			atlOffset=-0.024000168;
 		};
 		class Item53
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8002.1479,32.387501,10415.295};
-				angles[]={6.2824135,2.6248531,0.00077204045};
+				position[]={8002.1479,32.387112,10415.295};
+				angles[]={6.2824173,2.6248531,0.00076794485};
 			};
 			side="West";
 			flags=6;
 			class Attributes
 			{
 				init="call{[this]execVM ""functions\transport\transportAddAction.sqf"";}";
-				name="Rhino2";
+				name="Hawk2";
 			};
 			id=134;
 			type="RHS_UH1Y_FFAR";
-			atlOffset=-0.023611069;
+			atlOffset=-0.024000168;
 		};
 		class Item54
 		{
@@ -1961,32 +1990,36 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8079.1411,30.12565,10416.972};
-						angles[]={6.2799835,2.6248531,6.2807932};
+						position[]={8079.0718,30.080442,10416.543};
+						angles[]={6.2799911,2.6248531,6.2807941};
 					};
 					side="West";
 					flags=6;
 					class Attributes
 					{
+						name="Hawk1D";
 					};
 					id=136;
 					type="rhsusf_usmc_marpat_wd_helipilot";
+					atlOffset=-0.044000626;
 				};
 				class Item1
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8079.1411,30.12565,10416.972};
-						angles[]={6.2799835,2.6248531,6.2807932};
+						position[]={8079.0718,30.080442,10416.543};
+						angles[]={6.2799911,2.6248531,6.2807941};
 					};
 					side="West";
 					flags=4;
 					class Attributes
 					{
+						name="Hawk1G";
 					};
 					id=137;
 					type="rhsusf_usmc_marpat_wd_helipilot";
+					atlOffset=-0.044000626;
 				};
 			};
 			class Attributes
@@ -2025,26 +2058,26 @@ class Mission
 				};
 			};
 			id=135;
-			atlOffset=-0.043502808;
+			atlOffset=-0.043998718;
 		};
 		class Item55
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8079.0776,32.26664,10416.486};
-				angles[]={6.2799835,2.6248531,6.2807932};
+				position[]={8079.0771,32.266144,10416.486};
+				angles[]={6.2799911,2.6248531,6.2807941};
 			};
 			side="West";
 			flags=6;
 			class Attributes
 			{
 				init="call{[this]execVM ""functions\transport\transportAddAction.sqf"";" \n "}";
-				name="Rhino1";
+				name="Hawk1";
 			};
 			id=138;
 			type="RHS_UH1Y_UNARMED";
-			atlOffset=-0.043502808;
+			atlOffset=-0.043998718;
 		};
 		class Item56
 		{
@@ -3182,85 +3215,50 @@ class Mission
 		class Item97
 		{
 			dataType="Marker";
-			position[]={6161.5142,63.327,3535.175};
+			position[]={7678.8701,74.556366,4646.4263};
 			name="eastVehicleSpawn";
 			type="Empty";
 			id=189;
-			atlOffset=0.00018310547;
+			atlOffset=41.452278;
 		};
 		class Item98
 		{
 			dataType="Group";
-			side="East";
+			side="West";
 			class Entities
 			{
-				items=4;
+				items=2;
 				class Item0
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6175.5269,64.501236,3537.095};
-						angles[]={6.2807932,0,0.077444658};
+						position[]={8063.2598,30.48967,10495.216};
+						angles[]={6.2791882,0,6.2799911};
 					};
-					side="East";
-					flags=4;
+					side="West";
+					flags=6;
 					class Attributes
 					{
 					};
-					id=205;
-					type="LOP_ISTS_OPF_Infantry_Rifleman";
-					atlOffset=7.6293945e-006;
+					id=247;
+					type="B_Helipilot_F";
 				};
 				class Item1
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6175.354,66.728203,3537.1323};
-						angles[]={6.271987,0,0.086185835};
+						position[]={8063.2598,30.48967,10495.216};
+						angles[]={6.2791882,0,6.2799911};
 					};
-					side="East";
-					flags=2;
-					class Attributes
-					{
-					};
-					id=206;
-					type="LOP_ISTS_OPF_Infantry_Rifleman";
-					atlOffset=2.2408524;
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={6170.1006,64.03788,3535.7808};
-						angles[]={6.2719817,0,0.082214825};
-					};
-					side="East";
+					side="West";
 					flags=4;
 					class Attributes
 					{
 					};
-					id=208;
-					type="LOP_ISTS_OPF_Infantry_Rifleman";
-					atlOffset=-2.2888184e-005;
-				};
-				class Item3
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={6169.917,66.264236,3535.7983};
-						angles[]={6.2719817,0,0.082214825};
-					};
-					side="East";
-					class Attributes
-					{
-					};
-					id=209;
-					type="LOP_ISTS_OPF_Infantry_Rifleman";
-					atlOffset=2.2412643;
+					id=248;
+					type="B_Helipilot_F";
 				};
 			};
 			class Attributes
@@ -3270,16 +3268,16 @@ class Mission
 			{
 				class LinkIDProvider
 				{
-					nextID=4;
+					nextID=2;
 				};
 				class Links
 				{
-					items=4;
+					items=2;
 					class Item0
 					{
 						linkID=0;
-						item0=205;
-						item1=204;
+						item0=247;
+						item1=246;
 						class CustomData
 						{
 							role=1;
@@ -3288,29 +3286,8 @@ class Mission
 					class Item1
 					{
 						linkID=1;
-						item0=206;
-						item1=204;
-						class CustomData
-						{
-							role=2;
-							turretPath[]={0};
-						};
-					};
-					class Item2
-					{
-						linkID=2;
-						item0=208;
-						item1=207;
-						class CustomData
-						{
-							role=1;
-						};
-					};
-					class Item3
-					{
-						linkID=3;
-						item0=209;
-						item1=207;
+						item0=248;
+						item1=246;
 						class CustomData
 						{
 							role=2;
@@ -3319,42 +3296,24 @@ class Mission
 					};
 				};
 			};
-			id=203;
-			atlOffset=7.6293945e-006;
+			id=222;
 		};
 		class Item99
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={6175.354,66.726761,3537.0823};
-				angles[]={6.2807932,0,0.077444658};
+				position[]={8063.2661,32.410145,10495.159};
+				angles[]={6.2791882,0,6.2799911};
 			};
-			side="East";
+			side="West";
 			flags=6;
 			class Attributes
 			{
+				name="Buzzard_01";
 			};
-			id=204;
-			type="LOP_ISTS_OPF_Offroad_M2";
-			atlOffset=7.6293945e-006;
-		};
-		class Item100
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={6169.917,66.262794,3535.7483};
-				angles[]={6.2719817,0,0.082214825};
-			};
-			side="East";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=207;
-			type="LOP_ISTS_OPF_Offroad_M2";
-			atlOffset=-2.2888184e-005;
+			id=246;
+			type="B_Heli_Attack_01_dynamicLoadout_F";
 		};
 	};
 };
