@@ -130,7 +130,7 @@ while {_continue} do {
 
 // units arrays 
 // enemy units 
-
+Isis_Vehicles = ['LOP_ISTS_OPF_Offroad_M2', 'LOP_ISTS_OPF_M113_W', 'LOP_ISTS_OPF_BTR60', 'LOP_ISTS_OPF_Landrover_M2', 'LOP_ISTS_OPF_M1025_W_M2', 'O_IS_Technical_Armed_01', 'O_IS_Captured_Humvee_01'];
 // enemy soldiers array
 Isis_Unit_Configs = "getText (_x >> 'faction') == 'LOP_ISTS_OPF' && getText (_x >> 'simulation') == 'soldier'" configClasses (configFile >> "CfgVehicles");
 Isis_units = Isis_Unit_Configs apply {configName _x};
