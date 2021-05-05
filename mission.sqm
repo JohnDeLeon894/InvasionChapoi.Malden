@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=249;
+		nextID=250;
 	};
 	class MarkerIDProvider
 	{
@@ -293,7 +293,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=100;
+		items=101;
 		class Item0
 		{
 			dataType="Group";
@@ -847,7 +847,7 @@ class Mission
 			type="Empty";
 			colorName="ColorRed";
 			id=47;
-			atlOffset=7.1153393;
+			atlOffset=6.6189594;
 		};
 		class Item40
 		{
@@ -1323,7 +1323,7 @@ class Mission
 					};
 					id=93;
 					type="LOP_ISTS_OPF_Infantry_AR_Asst";
-					atlOffset=0.93661118;
+					atlOffset=0.61894226;
 				};
 				class Item3
 				{
@@ -2663,7 +2663,7 @@ class Mission
 		class Item68
 		{
 			dataType="Trigger";
-			position[]={2795.1609,223.91765,4208.9502};
+			position[]={2809.449,220.57599,4156.585};
 			class Attributes
 			{
 				text="Remove Unit";
@@ -2676,7 +2676,6 @@ class Mission
 			};
 			id=158;
 			type="EmptyDetector";
-			atlOffset=1.5258789e-005;
 		};
 		class Item69
 		{
@@ -3198,7 +3197,7 @@ class Mission
 		class Item96
 		{
 			dataType="Trigger";
-			position[]={2799.824,222.91702,4184.8589};
+			position[]={2795.6521,223.64384,4194.7729};
 			class Attributes
 			{
 				text="call Resupply";
@@ -3314,6 +3313,24 @@ class Mission
 			};
 			id=246;
 			type="B_Heli_Attack_01_dynamicLoadout_F";
+		};
+		class Item100
+		{
+			dataType="Trigger";
+			position[]={2799.667,222.79277,4178.1118};
+			class Attributes
+			{
+				name="CAS";
+				text="CAS";
+				condition="call{this}";
+				onActivation="call{[]execVM 'functions\CAS\callCAS.sqf';}";
+				sizeA=0;
+				sizeB=0;
+				repeatable=1;
+				activationBy="DELTA";
+			};
+			id=249;
+			type="EmptyDetector";
 		};
 	};
 };

@@ -17,7 +17,7 @@ private _CASAffirmMessage = format['%1 affirm, this is %2 responding to CAS miss
  player commandChat _CASAffirmMessage;
 _CAS move _casPos;
 
-sleep 90;
+sleep 300;
 
 private _CASRTB = format['%1 this is %2, we are RTB to refule and rearm. Goodluck down there.', player, _CAS];
 player commandChat _CASRTB;
