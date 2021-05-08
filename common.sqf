@@ -140,5 +140,11 @@ Isis_units = Isis_Unit_Configs apply {configName _x};
 bluforUnitsConfig= "getText (_x >> 'faction') == 'rhs_faction_usmc_wd' && getText (_x >> 'simulation') == 'soldier' &&  ['wd', getText (_x >> 'uniformClass')] call BIS_fnc_inString" configClasses (configFile >> "CfgVehicles");
 bluforUnits = bluforUnitsConfig apply {configName _x};
 
-// hint format ['returned %1', ['wd', getText (_x >> 'uniformClass')] call BIS_fnc_inString]
-// hint format ['returned %1', getText(configFile >> 'CfgVehicles' >> "rhsusf_usmc_lar_marpat_wd_grenadier_m32" >> 'uniformClass')]
+// new vietnam troups
+NVA_Unit_Configs = "getText (_x >> 'faction') == 'O_PAVN' && getText (_x >> 'simulation') == 'soldier'" configClasses (configFile >> "CfgVehicles");
+NVAUnits = NVA_Unit_Configs apply {configName _x};
+
+
+// new macv units
+MACVUnitsConfig= "getText (_x >> 'faction') == 'B_MACV' && getText (_x >> 'simulation') == 'soldier'"    configClasses (configFile >> "CfgVehicles");
+MACVUnits = MACVUnitsConfig apply {configName _x};

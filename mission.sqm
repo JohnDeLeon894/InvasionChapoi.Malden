@@ -293,7 +293,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=100;
+		items=101;
 		class Item0
 		{
 			dataType="Group";
@@ -847,7 +847,7 @@ class Mission
 			type="Empty";
 			colorName="ColorRed";
 			id=47;
-			atlOffset=6.6189594;
+			atlOffset=7.1153393;
 		};
 		class Item40
 		{
@@ -1323,7 +1323,7 @@ class Mission
 					};
 					id=93;
 					type="LOP_ISTS_OPF_Infantry_AR_Asst";
-					atlOffset=0.61894226;
+					atlOffset=0.93661118;
 				};
 				class Item3
 				{
@@ -3313,7 +3313,6 @@ class Mission
 			};
 			id=246;
 			type="B_Heli_Attack_01_dynamicLoadout_F";
-<<<<<<< HEAD
 		};
 		class Item100
 		{
@@ -3332,8 +3331,6 @@ class Mission
 			};
 			id=249;
 			type="EmptyDetector";
-=======
->>>>>>> addVehicleSpawn
 		};
 	};
 };
