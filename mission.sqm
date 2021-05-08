@@ -293,7 +293,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=101;
+		items=100;
 		class Item0
 		{
 			dataType="Group";
@@ -3313,6 +3313,7 @@ class Mission
 			};
 			id=246;
 			type="B_Heli_Attack_01_dynamicLoadout_F";
+<<<<<<< HEAD
 		};
 		class Item100
 		{
@@ -3331,6 +3332,8 @@ class Mission
 			};
 			id=249;
 			type="EmptyDetector";
+=======
+>>>>>>> addVehicleSpawn
 		};
 	};
 };

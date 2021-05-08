@@ -6,8 +6,9 @@ private _action = _this select 1;
 {
 	// Current result is saved in variable _x
 	private _tooFarFromLZ = _x distance TRANSPORT_ZONE > 100;
-	if(!(alive _x)) exitWith{
+	if(!(alive _x)) then {
 		TRANSPORTS deleteAt (TRANSPORTS find _x);
+		continue;
 	};
 	if(!(_x getVariable ['onMission', false]) && !(_tooFarFromLZ)) exitWith{
 		hint format ['%1 on the move', _x];
