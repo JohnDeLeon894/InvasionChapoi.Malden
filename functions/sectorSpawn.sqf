@@ -17,7 +17,7 @@ hint format _markers;
 		"\z\lambs\addons\wp\scripts\fnc_wpGarrison.sqf"
 		] call BIS_fnc_selectRandom;
 	private _position = getMarkerPos _x;
-	[_groupName, _groupSize, Isis_units, _position] call jMD_fnc_spawnGroups;
+	[_groupName, _groupSize, NVAUnits, _position] call jMD_fnc_spawnGroups;
 
 	_groupName addWaypoint [_position, 200];
 	[_groupName, (count waypoints _groupName) - 1 ] setWaypointScript _wayPointScript ;

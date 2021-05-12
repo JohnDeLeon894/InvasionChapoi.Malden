@@ -10,7 +10,7 @@ if (!continueLoop) exitWith {
 	private _count = {alive _x} count units _x;
 	private _marker = EAST_POSITIONS call BIS_fnc_selectRandom;
 	private _location = markerPos _marker;
-	private _results =  [_x, (RED_UNIT_SIZE - _count), Isis_units, EAST_SPAWN] call  jMD_fnc_spawnGroups;
+	private _results =  [_x, (RED_UNIT_SIZE - _count), NVAUnits, EAST_SPAWN] call  jMD_fnc_spawnGroups;
 	private _waypoints = [_x, 200, _location, true, true] call jMD_fnc_deleteAndSetWaypoints;
 } forEach ENEMY_GROUPS;
 
@@ -21,13 +21,13 @@ if (!continueLoop) exitWith {
 	private _count = {alive _x}count units _x;
 	private _group = _x;
 	private _routArray = [ROUT_ONE, ROUT_TWO, ROUT_THREE] call BIS_fnc_selectRandom;
-	private _results =  [_group, (_groupSize - _count), bluforUnits, WEST_SPAWN] call  jMD_fnc_spawnGroups;
+	private _results =  [_group, (_groupSize - _count), MACVUnits, WEST_SPAWN] call  jMD_fnc_spawnGroups;
 	private _timer = 0;
 
 	while { ( {alive _x}count units _group) < _groupSize } do {
 		_timer = _timer + 1;
 		private _count = {alive _x}count units _group;
-		private _results =  [_group, (_groupSize - _count), bluforUnits, WEST_SPAWN] call  jMD_fnc_spawnGroups;
+		private _results =  [_group, (_groupSize - _count), MACVUnits, WEST_SPAWN] call  jMD_fnc_spawnGroups;
 		if (_timer > 255) then { breakTo "unitSpawn"};
 	};
 	if (count waypoints _x < 2) then {

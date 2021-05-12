@@ -146,5 +146,5 @@ NVAUnits = NVA_Unit_Configs apply {configName _x};
 
 
 // new macv units
-MACVUnitsConfig= "getText (_x >> 'faction') == 'B_MACV' && getText (_x >> 'simulation') == 'soldier'"    configClasses (configFile >> "CfgVehicles");
+MACVUnitsConfig= "getText (_x >> 'faction') == 'B_MACV' && getText (_x >> 'simulation') == 'soldier' && getText (_x >> 'role') != 'Crewman'"    configClasses (configFile >> "CfgVehicles");
 MACVUnits = MACVUnitsConfig apply {configName _x};

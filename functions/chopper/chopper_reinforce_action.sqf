@@ -6,7 +6,8 @@ private _reinforcementCount = _troopLimit - ({alive _x} count units group player
 private _position = getMarkerPos 'w_spawn';
 
 hint 'started';
-private _unitsList = "getText (_x >> 'faction') == 'LOP_PMC' && getText (_x >> 'simulation') == 'soldier'" configClasses (configFile >> "CfgVehicles");
+// private _unitsList = "getText (_x >> 'faction') == 'LOP_PMC' && getText (_x >> 'simulation') == 'soldier'" configClasses (configFile >> "CfgVehicles");
+private _unitsList = MACVUnits;
 private _unitsArray = _unitsList apply {configName _x};
 
 for [{ private _i =_reinforcementCount}, {_i > 0}, {_i = _i - 1}] do {
